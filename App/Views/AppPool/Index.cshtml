@@ -1,0 +1,47 @@
+﻿@model DevUtility.Domain.ViewModels.DevUtilityViewModel
+
+@{
+    ViewData["Title"] = "App Pools";
+}
+
+<div class="app-pool-list">
+    @foreach (var appPool in Model.AppPools)
+    {
+        <div class="app-pool-list__app-pool @(appPool.IsStopped ? "app-pool--stopped stopped": "app-pool--running running")" data-app-pool-name="@(appPool.Name)">
+            <div class="app-pool__name">@appPool.Name</div>
+            <div class="app-pool__triggers">
+                <div class="app-pool__trigger app-pool__trigger--start" data-api-action="start">
+                    <div class="app-pool__trigger-container">
+                        <div class="app-pool__trigger-name app-pool__trigger-name--start">
+                            Start
+                        </div>
+                        @{
+                            await Html.RenderPartialAsync("Partials/Iconography/_Start");
+                        }
+                    </div>
+                </div>
+                <div class="app-pool__trigger" data-api-action="stop">
+                    <div class="app-pool__trigger-container">
+                        <div class="app-pool__trigger-name">
+                            Stop
+                        </div>
+                        @{
+                            await Html.RenderPartialAsync("Partials/Iconography/_Stop");
+                        }
+                    </div>
+                </div>
+                <div class="app-pool__trigger" data-api-action="recycle">
+                    <div class="app-pool__trigger-container">
+                        <div class="app-pool__trigger-name">
+                            Recycle
+                        </div>
+                        @{
+                            await Html.RenderPartialAsync("Partials/Iconography/_Recycle");
+                        }
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    }
+</div>

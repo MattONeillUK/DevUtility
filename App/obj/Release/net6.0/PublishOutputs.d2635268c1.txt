@@ -1,0 +1,10 @@
+D:\Projects\AppPoolRecycler\obj\Release\net6.0\PubTmp\Out\AppPoolRecycler.exe
+D:\Projects\AppPoolRecycler\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\Projects\AppPoolRecycler\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\Projects\AppPoolRecycler\obj\Release\net6.0\PubTmp\Out\AppPoolRecycler.dll
+D:\Projects\AppPoolRecycler\obj\Release\net6.0\PubTmp\Out\AppPoolRecycler.deps.json
+D:\Projects\AppPoolRecycler\obj\Release\net6.0\PubTmp\Out\AppPoolRecycler.runtimeconfig.json
+D:\Projects\AppPoolRecycler\obj\Release\net6.0\PubTmp\Out\AppPoolRecycler.pdb
+D:\Projects\AppPoolRecycler\obj\Release\net6.0\PubTmp\Out\Microsoft.Web.Administration.dll
+D:\Projects\AppPoolRecycler\obj\Release\net6.0\PubTmp\Out\runtimes\unix\lib\netstandard1.5\System.ServiceProcess.ServiceController.dll
+D:\Projects\AppPoolRecycler\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netstandard1.5\System.ServiceProcess.ServiceController.dll

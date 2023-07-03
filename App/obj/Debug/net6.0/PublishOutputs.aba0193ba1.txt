@@ -1,0 +1,12 @@
+D:\Projects\DevUtility\App\obj\Debug\net6.0\PubTmp\Out\DevUtility.exe
+D:\Projects\DevUtility\App\obj\Debug\net6.0\PubTmp\Out\appsettings.Development.json
+D:\Projects\DevUtility\App\obj\Debug\net6.0\PubTmp\Out\appsettings.json
+D:\Projects\DevUtility\App\obj\Debug\net6.0\PubTmp\Out\DevUtility.dll
+D:\Projects\DevUtility\App\obj\Debug\net6.0\PubTmp\Out\DevUtility.deps.json
+D:\Projects\DevUtility\App\obj\Debug\net6.0\PubTmp\Out\DevUtility.runtimeconfig.json
+D:\Projects\DevUtility\App\obj\Debug\net6.0\PubTmp\Out\DevUtility.pdb
+D:\Projects\DevUtility\App\obj\Debug\net6.0\PubTmp\Out\AutoMapper.dll
+D:\Projects\DevUtility\App\obj\Debug\net6.0\PubTmp\Out\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Projects\DevUtility\App\obj\Debug\net6.0\PubTmp\Out\Microsoft.Web.Administration.dll
+D:\Projects\DevUtility\App\obj\Debug\net6.0\PubTmp\Out\runtimes\unix\lib\netstandard1.5\System.ServiceProcess.ServiceController.dll
+D:\Projects\DevUtility\App\obj\Debug\net6.0\PubTmp\Out\runtimes\win\lib\netstandard1.5\System.ServiceProcess.ServiceController.dll

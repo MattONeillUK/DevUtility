@@ -1,0 +1,19 @@
+﻿.app-pool-list { display: flex; flex-wrap: wrap; box-sizing: border-box }
+.app-pool-list__app-pool { display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 100%; margin: 1%; height: 15vh; border-radius: 7px; }
+.app-pool-list__app-pool.app-pool--stopped { background: #333; }
+
+.app-pool-list__app-pool.app-pool--running .app-pool__trigger[data-api-action="start"],
+.app-pool-list__app-pool.app-pool--stopped .app-pool__trigger[data-api-action="stop"],
+.app-pool-list__app-pool.app-pool--stopped .app-pool__trigger[data-api-action="recycle"] { display: none; }
+
+.app-pool-list__app-pool.pending { opacity: 0.3; }
+.app-pool-list__app-pool.error {  }
+.app-pool__name { color: #fff; box-sizing: border-box; width: 60%; padding: 0 3%; height: 100%; font-size: 1.4rem; display: flex; align-items: center; }
+.app-pool__triggers { width: 40%; height: 100%; display: flex; }
+.app-pool__trigger { border-left: 3px solid #fff; display: flex; align-items: center; justify-content: center; width: 50%; height: 100%; }
+.app-pool__trigger:hover { background: rgba(0, 0, 0, 0.3); cursor: pointer; }
+.app-pool__trigger-container { display: flex; flex-direction: column; align-items: center; }
+.app-pool__trigger-name { margin-bottom: 5px; font-size: 1rem; color: #fff; }
+.app-pool__trigger-name--start { color: #fff; }
+.app-pool__trigger--start.app-pool__trigger { width: 100%; }
+.app-pool__trigger--start.app-pool__trigger .app-pool__trigger-container { width: 50%; }

@@ -1,0 +1,22 @@
+{
+  "name": "MON Ltd",
+  "short_name": "DevUtility",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#2da35c",
+  "background_color": "#2da35c",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

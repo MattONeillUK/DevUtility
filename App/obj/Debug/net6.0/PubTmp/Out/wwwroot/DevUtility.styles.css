@@ -1,0 +1,70 @@
+/* _content/DevUtility/Views/AppPool/Index.cshtml.rz.scp.css */
+.app-pool-list[b-480jx0wx9v] { display: flex; flex-wrap: wrap; box-sizing: border-box }
+.app-pool-list__app-pool[b-480jx0wx9v] { display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 100%; margin: 1%; height: 15vh; border-radius: 7px; }
+.app-pool-list__app-pool.app-pool--stopped[b-480jx0wx9v] { background: #333; }
+
+.app-pool-list__app-pool.app-pool--running .app-pool__trigger[data-api-action="start"][b-480jx0wx9v],
+.app-pool-list__app-pool.app-pool--stopped .app-pool__trigger[data-api-action="stop"][b-480jx0wx9v],
+.app-pool-list__app-pool.app-pool--stopped .app-pool__trigger[data-api-action="recycle"][b-480jx0wx9v] { display: none; }
+
+.app-pool-list__app-pool.pending[b-480jx0wx9v] { opacity: 0.3; }
+.app-pool-list__app-pool.error[b-480jx0wx9v] {  }
+.app-pool__name[b-480jx0wx9v] { color: #fff; box-sizing: border-box; width: 60%; padding: 0 3%; height: 100%; font-size: 1.4rem; display: flex; align-items: center; }
+.app-pool__triggers[b-480jx0wx9v] { width: 40%; height: 100%; display: flex; }
+.app-pool__trigger[b-480jx0wx9v] { border-left: 3px solid #fff; display: flex; align-items: center; justify-content: center; width: 50%; height: 100%; }
+.app-pool__trigger:hover[b-480jx0wx9v] { background: rgba(0, 0, 0, 0.3); cursor: pointer; }
+.app-pool__trigger-container[b-480jx0wx9v] { display: flex; flex-direction: column; align-items: center; }
+.app-pool__trigger-name[b-480jx0wx9v] { margin-bottom: 5px; font-size: 1rem; color: #fff; }
+.app-pool__trigger-name--start[b-480jx0wx9v] { color: #fff; }
+.app-pool__trigger--start.app-pool__trigger[b-480jx0wx9v] { width: 100%; }
+.app-pool__trigger--start.app-pool__trigger .app-pool__trigger-container[b-480jx0wx9v] { width: 50%; }
+/* _content/DevUtility/Views/Home/Index.cshtml.rz.scp.css */
+/* _content/DevUtility/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-070ix9huzl] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-070ix9huzl] {
+  color: #0077cc;
+}
+
+.btn-primary[b-070ix9huzl] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-070ix9huzl], .nav-pills .show > .nav-link[b-070ix9huzl] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-070ix9huzl] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-070ix9huzl] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-070ix9huzl] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-070ix9huzl] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-070ix9huzl] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
