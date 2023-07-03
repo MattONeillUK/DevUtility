@@ -15,16 +15,8 @@ public class AppPoolService : IAppPoolService
         _mapper = mapper;
     }
 
-    public DevUtilityViewModel GetViewModel()
-    {
-        var result = new DevUtilityViewModel
-        {
-            AppPools = GetAppPools()
-        };
-
-        return result;
-    }
-
+    public DevUtilityViewModel GetViewModel(string? filter) => new(filter, GetAppPools(filter));
+    
     public AppPoolStateModel? RecycleAppPoolByName(string siteName)
     {
         try
@@ -115,16 +107,24 @@ public class AppPoolService : IAppPoolService
 
     }
 
-    private static IEnumerable<AppPoolModel> GetAppPools()
+    private static IEnumerable<AppPoolModel> GetAppPools(string? filter)
     {
         var iisManager = new ServerManager();
 
         var sites = iisManager.ApplicationPools;
 
-        return sites.Select(site => new AppPoolModel
+        var result = sites.Select(site => new AppPoolModel
         {
             Name = site.Name,
+            State = site.State.ToString(),
             IsStopped = site.State is ObjectState.Stopped or ObjectState.Stopping
         });
+
+        if (filter != null)
+        {
+            result = result.Where(a => a.Name.Contains(filter));
+        }
+
+        return result;
     }
 }

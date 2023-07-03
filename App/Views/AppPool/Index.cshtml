@@ -4,11 +4,25 @@
     ViewData["Title"] = "App Pools";
 }
 
+<div class="app-pool-filter">
+    <form id="app-pool-filter">
+        <div class="form-inner">
+            <div class="form-group">
+                <input type="text" class="form-control" id="filterFreeText" placeholder="" value="@Model.FilterQuery">
+            </div>
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </div>
+    </form>
+</div>
+
 <div class="app-pool-list">
     @foreach (var appPool in Model.AppPools)
     {
-        <div class="app-pool-list__app-pool @(appPool.IsStopped ? "app-pool--stopped stopped": "app-pool--running running")" data-app-pool-name="@(appPool.Name)">
-            <div class="app-pool__name">@appPool.Name</div>
+        <div class="app-pool-list__app-pool @(appPool.IsStopped ? "app-pool--stopped stopped" : "app-pool--running running")" data-app-pool-name="@(appPool.Name)">
+            <div class="app-pool__hgroup">
+                <div class="app-pool__name">@appPool.Name</div>
+                <div class="app-pool__state @(appPool.IsStopped ? "stopped border-fl" : "running border-fl")">@appPool.State</div>
+            </div>
             <div class="app-pool__triggers">
                 <div class="app-pool__trigger app-pool__trigger--start" data-api-action="start">
                     <div class="app-pool__trigger-container">

@@ -5,7 +5,7 @@ namespace DevUtility.Domain.Interfaces;
 
 public interface IAppPoolService
 {
-    DevUtilityViewModel GetViewModel();
+    DevUtilityViewModel GetViewModel(string? filter);
     AppPoolStateModel? StartAppPoolByName(string siteName);
     AppPoolStateModel? RecycleAppPoolByName(string siteName);
     AppPoolStateModel? StopAppPoolByName(string siteName);
