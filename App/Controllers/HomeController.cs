@@ -19,8 +19,7 @@ namespace DevUtility.Controllers
 
         public IActionResult Index()
         {
-            var viewModel = _appPoolService.GetViewModel();
-            return View(viewModel);
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

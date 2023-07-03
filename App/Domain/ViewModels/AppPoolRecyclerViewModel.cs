@@ -2,7 +2,7 @@
 
 namespace DevUtility.Domain.ViewModels;
 
-public class DevUtilityViewModel
-{
-    public IEnumerable<AppPoolModel> AppPools { get; set; }
-}
+public sealed record DevUtilityViewModel(
+    string? FilterQuery,
+    IEnumerable<AppPoolModel> AppPools
+    );

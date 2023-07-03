@@ -17,9 +17,9 @@ namespace DevUtility.Controllers
             _appPoolService = appPoolService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index([FromQuery(Name = "filter")] string filter)
         {
-            var viewModel = _appPoolService.GetViewModel();
+            var viewModel = _appPoolService.GetViewModel(filter);
             return View(viewModel);
         }
 

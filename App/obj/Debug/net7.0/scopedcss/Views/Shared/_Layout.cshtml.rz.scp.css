@@ -1,0 +1,20 @@
+a.navbar-brand[b-ib3axt354c] { display: flex; align-content: center; white-space: normal; text-align: center; word-break: break-all; color: #fff!important; }
+a.navbar-brand #mast-logo[b-ib3axt354c] { width: 32px; margin-right: 10px; }
+
+a.nav-link[b-ib3axt354c] { color: #fff !important; }
+
+a[b-ib3axt354c] { color: #228096; }
+
+.btn-primary[b-ib3axt354c] { color: #fff; background-color: #228096; border-color: #228096; }
+
+.navbar[b-ib3axt354c] { background: #228096; color: #fff; }
+.nav-pills .nav-link.active[b-ib3axt354c], .nav-pills .show > .nav-link[b-ib3axt354c] { color: #fff; background-color: #228096; border-color: #228096; }
+
+.border-top[b-ib3axt354c] { border-top: 1px solid #e5e5e5; }
+.border-bottom[b-ib3axt354c] { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow[b-ib3axt354c] { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+button.accept-policy[b-ib3axt354c] { font-size: 1rem; line-height: inherit; }
+
+.footer[b-ib3axt354c] { position: absolute; bottom: 0; width: 100%; white-space: nowrap; line-height: 60px; }
